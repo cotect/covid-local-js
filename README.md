@@ -109,7 +109,6 @@ For further documentation, see below and the readme file of [covid-local-api](ht
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://localhost*
 
 | Class                   | Method                                                              | HTTP request                | Description                                                     |
 | ----------------------- | ------------------------------------------------------------------- | --------------------------- | --------------------------------------------------------------- |

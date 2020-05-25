@@ -1,16 +1,16 @@
 # CovidLocal.DefaultApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to *http://ec2-3-90-67-33.compute-1.amazonaws.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getAll**](DefaultApi.md#getAll) | **GET** /all | Get all items for a place
-[**getHealthDepartments**](DefaultApi.md#getHealthDepartments) | **GET** /health_departments | Get responsible health departments for a place
-[**getHotlines**](DefaultApi.md#getHotlines) | **GET** /hotlines | Get hotlines for a place
-[**getTestSites**](DefaultApi.md#getTestSites) | **GET** /test_sites | Get nearby test sites for a place (sorted by distance to place)
-[**getWebsites**](DefaultApi.md#getWebsites) | **GET** /websites | Get websites for a place
-[**searchPlaces**](DefaultApi.md#searchPlaces) | **GET** /places | Search for places via free-form query
-[**test**](DefaultApi.md#test) | **GET** /test | Shows all entries for Berlin Mitte (redirects to /all endpoint)
+| Method                                                         | HTTP request                | Description                                                     |
+| -------------------------------------------------------------- | --------------------------- | --------------------------------------------------------------- |
+| [**getAll**](DefaultApi.md#getAll)                             | **GET** /all                | Get all items for a place                                       |
+| [**getHealthDepartments**](DefaultApi.md#getHealthDepartments) | **GET** /health_departments | Get responsible health departments for a place                  |
+| [**getHotlines**](DefaultApi.md#getHotlines)                   | **GET** /hotlines           | Get hotlines for a place                                        |
+| [**getTestSites**](DefaultApi.md#getTestSites)                 | **GET** /test_sites         | Get nearby test sites for a place (sorted by distance to place) |
+| [**getWebsites**](DefaultApi.md#getWebsites)                   | **GET** /websites           | Get websites for a place                                        |
+| [**searchPlaces**](DefaultApi.md#searchPlaces)                 | **GET** /places             | Search for places via free-form query                           |
+| [**test**](DefaultApi.md#test)                                 | **GET** /test               | Shows all entries for Berlin Mitte (redirects to /all endpoint) |
 
 
 
@@ -44,12 +44,12 @@ apiInstance.getAll(opts, (error, data, response) => {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **placeName** | **String**| The name of the place, e.g. a city, neighborhood, state (either place_name or geonames_id must be provided) | [optional] 
- **geonamesId** | **Number**| The geonames.org id of the place (either place_name or geonames_id must be provided) | [optional] 
- **maxDistance** | **Number**| Maximum distance in degrees lon/lat for test sites | [optional] [default to 0.5]
- **limit** | **Number**| Maximum number of test sites to return | [optional] [default to 5]
+| Name            | Type       | Description                                                                                                 | Notes                       |
+| --------------- | ---------- | ----------------------------------------------------------------------------------------------------------- | --------------------------- |
+| **placeName**   | **String** | The name of the place, e.g. a city, neighborhood, state (either place_name or geonames_id must be provided) | [optional]                  |
+| **geonamesId**  | **Number** | The geonames.org id of the place (either place_name or geonames_id must be provided)                        | [optional]                  |
+| **maxDistance** | **Number** | Maximum distance in degrees lon/lat for test sites                                                          | [optional] [default to 0.5] |
+| **limit**       | **Number** | Maximum number of test sites to return                                                                      | [optional] [default to 5]   |
 
 ### Return type
 
@@ -93,10 +93,10 @@ apiInstance.getHealthDepartments(opts, (error, data, response) => {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **placeName** | **String**| The name of the place, e.g. a city, neighborhood, state (either place_name or geonames_id must be provided) | [optional] 
- **geonamesId** | **Number**| The geonames.org id of the place (either place_name or geonames_id must be provided) | [optional] 
+| Name           | Type       | Description                                                                                                 | Notes      |
+| -------------- | ---------- | ----------------------------------------------------------------------------------------------------------- | ---------- |
+| **placeName**  | **String** | The name of the place, e.g. a city, neighborhood, state (either place_name or geonames_id must be provided) | [optional] |
+| **geonamesId** | **Number** | The geonames.org id of the place (either place_name or geonames_id must be provided)                        | [optional] |
 
 ### Return type
 
@@ -140,10 +140,10 @@ apiInstance.getHotlines(opts, (error, data, response) => {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **placeName** | **String**| The name of the place, e.g. a city, neighborhood, state (either place_name or geonames_id must be provided) | [optional] 
- **geonamesId** | **Number**| The geonames.org id of the place (either place_name or geonames_id must be provided) | [optional] 
+| Name           | Type       | Description                                                                                                 | Notes      |
+| -------------- | ---------- | ----------------------------------------------------------------------------------------------------------- | ---------- |
+| **placeName**  | **String** | The name of the place, e.g. a city, neighborhood, state (either place_name or geonames_id must be provided) | [optional] |
+| **geonamesId** | **Number** | The geonames.org id of the place (either place_name or geonames_id must be provided)                        | [optional] |
 
 ### Return type
 
@@ -189,12 +189,12 @@ apiInstance.getTestSites(opts, (error, data, response) => {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **placeName** | **String**| The name of the place, e.g. a city, neighborhood, state (either place_name or geonames_id must be provided) | [optional] 
- **geonamesId** | **Number**| The geonames.org id of the place (either place_name or geonames_id must be provided) | [optional] 
- **maxDistance** | **Number**| Maximum distance in degrees lon/lat for test sites | [optional] [default to 0.5]
- **limit** | **Number**| Maximum number of test sites to return | [optional] [default to 5]
+| Name            | Type       | Description                                                                                                 | Notes                       |
+| --------------- | ---------- | ----------------------------------------------------------------------------------------------------------- | --------------------------- |
+| **placeName**   | **String** | The name of the place, e.g. a city, neighborhood, state (either place_name or geonames_id must be provided) | [optional]                  |
+| **geonamesId**  | **Number** | The geonames.org id of the place (either place_name or geonames_id must be provided)                        | [optional]                  |
+| **maxDistance** | **Number** | Maximum distance in degrees lon/lat for test sites                                                          | [optional] [default to 0.5] |
+| **limit**       | **Number** | Maximum number of test sites to return                                                                      | [optional] [default to 5]   |
 
 ### Return type
 
@@ -238,10 +238,10 @@ apiInstance.getWebsites(opts, (error, data, response) => {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **placeName** | **String**| The name of the place, e.g. a city, neighborhood, state (either place_name or geonames_id must be provided) | [optional] 
- **geonamesId** | **Number**| The geonames.org id of the place (either place_name or geonames_id must be provided) | [optional] 
+| Name           | Type       | Description                                                                                                 | Notes      |
+| -------------- | ---------- | ----------------------------------------------------------------------------------------------------------- | ---------- |
+| **placeName**  | **String** | The name of the place, e.g. a city, neighborhood, state (either place_name or geonames_id must be provided) | [optional] |
+| **geonamesId** | **Number** | The geonames.org id of the place (either place_name or geonames_id must be provided)                        | [optional] |
 
 ### Return type
 
@@ -286,11 +286,11 @@ apiInstance.searchPlaces(q, opts, (error, data, response) => {
 ### Parameters
 
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **q** | **String**| Free-form query string (e.g. a city, neighborhood, state, ...) | 
- **limit** | **Number**| Maximum number of entries to return | [optional] [default to 5]
- **searchProvider** | **String**| The search provider (only geonames supported so far) | [optional] [default to &#39;geonames&#39;]
+| Name               | Type       | Description                                                    | Notes                                      |
+| ------------------ | ---------- | -------------------------------------------------------------- | ------------------------------------------ |
+| **q**              | **String** | Free-form query string (e.g. a city, neighborhood, state, ...) |
+| **limit**          | **Number** | Maximum number of entries to return                            | [optional] [default to 5]                  |
+| **searchProvider** | **String** | The search provider (only geonames supported so far)           | [optional] [default to &#39;geonames&#39;] |
 
 ### Return type
 
