@@ -1,4 +1,4 @@
-# Covid19LocalApi.DefaultApi
+# CovidLocal.DefaultApi
 
 All URIs are relative to *http://localhost*
 
@@ -23,9 +23,9 @@ Get all items for a place
 ### Example
 
 ```javascript
-import Covid19LocalApi from 'covid_19_local_api';
+import CovidLocal from 'covid-local-js';
 
-let apiInstance = new Covid19LocalApi.DefaultApi();
+let apiInstance = new CovidLocal.DefaultApi();
 let opts = {
   'placeName': "placeName_example", // String | The name of the place, e.g. a city, neighborhood, state (either place_name or geonames_id must be provided)
   'geonamesId': 56, // Number | The geonames.org id of the place (either place_name or geonames_id must be provided)
@@ -74,9 +74,9 @@ Get responsible health departments for a place
 ### Example
 
 ```javascript
-import Covid19LocalApi from 'covid_19_local_api';
+import CovidLocal from 'covid-local-js';
 
-let apiInstance = new Covid19LocalApi.DefaultApi();
+let apiInstance = new CovidLocal.DefaultApi();
 let opts = {
   'placeName': "placeName_example", // String | The name of the place, e.g. a city, neighborhood, state (either place_name or geonames_id must be provided)
   'geonamesId': 56 // Number | The geonames.org id of the place (either place_name or geonames_id must be provided)
@@ -121,9 +121,9 @@ Get hotlines for a place
 ### Example
 
 ```javascript
-import Covid19LocalApi from 'covid_19_local_api';
+import CovidLocal from 'covid-local-js';
 
-let apiInstance = new Covid19LocalApi.DefaultApi();
+let apiInstance = new CovidLocal.DefaultApi();
 let opts = {
   'placeName': "placeName_example", // String | The name of the place, e.g. a city, neighborhood, state (either place_name or geonames_id must be provided)
   'geonamesId': 56 // Number | The geonames.org id of the place (either place_name or geonames_id must be provided)
@@ -168,9 +168,9 @@ Get nearby test sites for a place (sorted by distance to place)
 ### Example
 
 ```javascript
-import Covid19LocalApi from 'covid_19_local_api';
+import CovidLocal from 'covid-local-js';
 
-let apiInstance = new Covid19LocalApi.DefaultApi();
+let apiInstance = new CovidLocal.DefaultApi();
 let opts = {
   'placeName': "placeName_example", // String | The name of the place, e.g. a city, neighborhood, state (either place_name or geonames_id must be provided)
   'geonamesId': 56, // Number | The geonames.org id of the place (either place_name or geonames_id must be provided)
@@ -219,9 +219,9 @@ Get websites for a place
 ### Example
 
 ```javascript
-import Covid19LocalApi from 'covid_19_local_api';
+import CovidLocal from 'covid-local-js';
 
-let apiInstance = new Covid19LocalApi.DefaultApi();
+let apiInstance = new CovidLocal.DefaultApi();
 let opts = {
   'placeName': "placeName_example", // String | The name of the place, e.g. a city, neighborhood, state (either place_name or geonames_id must be provided)
   'geonamesId': 56 // Number | The geonames.org id of the place (either place_name or geonames_id must be provided)
@@ -266,9 +266,9 @@ Search for places via free-form query
 ### Example
 
 ```javascript
-import Covid19LocalApi from 'covid_19_local_api';
+import CovidLocal from 'covid-local-js';
 
-let apiInstance = new Covid19LocalApi.DefaultApi();
+let apiInstance = new CovidLocal.DefaultApi();
 let q = "q_example"; // String | Free-form query string (e.g. a city, neighborhood, state, ...)
 let opts = {
   'limit': 5, // Number | Maximum number of entries to return
@@ -315,9 +315,9 @@ Shows all entries for Berlin Mitte (redirects to /all endpoint)
 ### Example
 
 ```javascript
-import Covid19LocalApi from 'covid_19_local_api';
+import CovidLocal from 'covid-local-js';
 
-let apiInstance = new Covid19LocalApi.DefaultApi();
+let apiInstance = new CovidLocal.DefaultApi();
 apiInstance.test((error, data, response) => {
   if (error) {
     console.error(error);

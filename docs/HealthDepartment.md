@@ -1,4 +1,4 @@
-# Covid19LocalApi.HealthDepartment
+# CovidLocal.HealthDepartment
 
 ## Properties
 

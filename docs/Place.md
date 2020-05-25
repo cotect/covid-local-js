@@ -1,4 +1,4 @@
-# Covid19LocalApi.Place
+# CovidLocal.Place
 
 ## Properties
 

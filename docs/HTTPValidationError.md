@@ -1,4 +1,4 @@
-# Covid19LocalApi.HTTPValidationError
+# CovidLocal.HTTPValidationError
 
 ## Properties
 

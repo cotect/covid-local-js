@@ -1,4 +1,4 @@
-# Covid19LocalApi.Hotline
+# CovidLocal.Hotline
 
 ## Properties
 

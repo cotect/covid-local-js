@@ -30,9 +30,9 @@ import DefaultApi from './api/DefaultApi';
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var Covid19LocalApi = require('index'); // See note below*.
-* var xxxSvc = new Covid19LocalApi.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new Covid19LocalApi.Yyy(); // Construct a model instance.
+* var CovidLocal = require('index'); // See note below*.
+* var xxxSvc = new CovidLocal.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new CovidLocal.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -44,8 +44,8 @@ import DefaultApi from './api/DefaultApi';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new Covid19LocalApi.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new Covid19LocalApi.Yyy(); // Construct a model instance.
+* var xxxSvc = new CovidLocal.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new CovidLocal.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

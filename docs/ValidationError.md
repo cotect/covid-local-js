@@ -1,4 +1,4 @@
-# Covid19LocalApi.ValidationError
+# CovidLocal.ValidationError
 
 ## Properties
 

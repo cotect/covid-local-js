@@ -1,4 +1,4 @@
-# Covid19LocalApi.ResultsList
+# CovidLocal.ResultsList
 
 ## Properties
 

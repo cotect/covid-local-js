@@ -1,4 +1,4 @@
-# Covid19LocalApi.TestSite
+# CovidLocal.TestSite
 
 ## Properties
 
